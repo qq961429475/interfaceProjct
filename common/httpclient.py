@@ -28,7 +28,7 @@ class HttpClient(object):
 
         if method == "GET":
             response = self.session.request(method=method, url=url, params=data, **kwargs)
-        elif method == 'post':
+        elif method == "POST":
             if params_type == 'FORM':  # 发送表单数据，使用data参数传递
                 response = self.session.request(method=method, url=url, data=data, **kwargs)
             else:  # "JSON" == params_type:发送json数据，使用json从参数传递
