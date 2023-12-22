@@ -18,7 +18,7 @@ class HttpClient(object):
     def __init__(self):
         self.session = requests.session()
 
-    def send_request(self, method, url, params_type="form", data=None, **kwargs):
+    def send_request(self, method, url, data=None, params_type="form", **kwargs):
         method = method.upper()
         params_type = params_type.upper()
 

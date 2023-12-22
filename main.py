@@ -1,4 +1,3 @@
-import pytest
 import os
 import shutil
 import pytest
@@ -16,4 +15,4 @@ if __name__ == '__main__':
     # os.system('allure generate ./result/ -o ./report_allure/ --clean')
     # os.system('allure serve result')
 
-    pytest.main(['-v', '-s', './testcase/testCase.py'])
+    pytest.main()
